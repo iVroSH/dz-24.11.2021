@@ -1,0 +1,40 @@
+﻿<Window x:Class="dz_24._11._2021.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dz_24._11._2021"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="350" Background="#FF615869">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <UniformGrid Grid.Row="2" Columns="4" Rows="5">
+            <Button x:Name="bCE" Content="CE" Margin="2" FontWeight="Bold" FontSize="24" Click="bCE_Click"/>
+            <Button x:Name="bC" Content="C" Margin="2" FontWeight="Bold" FontSize="24" Click="bC_Click"/>
+            <Button x:Name="bBackspace" Content="&lt;" Margin="2" FontWeight="Bold" FontSize="24" Click="bBackspace_Click"/>
+            <Button x:Name="bDiv" Content="/" Margin="2" FontWeight="Bold" FontSize="24" Click="bClick"/>
+            <Button x:Name="b7" Content="7" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b8" Content="8" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b9" Content="9" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="bMult" Content="*" Margin="2" FontWeight="Bold" FontSize="24" Click="bClick"/>
+            <Button x:Name="b4" Content="4" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b5" Content="5" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b6" Content="6" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="bMinus" Content="-" Margin="2" FontWeight="Bold" FontSize="24" Click="bClick"/>
+            <Button x:Name="b1" Content="1" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b2" Content="2" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b3" Content="3" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="bPlus" Content="+" Margin="2" FontWeight="Bold" FontSize="24" Click="bClick"/>
+            <Button x:Name="bDot" Content="," Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="b0" Content="0" Margin="2" FontWeight="Bold" FontSize="24" Click="numClick"/>
+            <Button x:Name="bRes" Content="=" Margin="2" FontWeight="Bold" FontSize="24" Click="bClick"/>
+        </UniformGrid>
+        <TextBox x:Name="tb1" Grid.Row="0" Text="" Margin="2" FontSize="16" TextAlignment="Right" Foreground="#FF868686" IsEnabled="False"/>
+        <TextBox x:Name="tb2" Grid.Row="1" Text="0" Margin="2" FontSize="48" TextAlignment="Right" FontWeight="Bold" IsEnabled="False"/>
+    </Grid>
+
+</Window>
